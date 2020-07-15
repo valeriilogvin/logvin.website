@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mango</title>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="css/main.css" rel="stylesheet"/>
+
+    <link href="fav.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta content="telephone=no" name="format-detection">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700,800|Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- svg-icon ======================= -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-fb" viewBox="0 0 15 32">
+                <title>fb</title>
+                <path  d="M4.476 32v-14.313h-4.476v-5.687h4.476v-4.481c0-4.869 2.778-7.519 6.834-7.519 1.944 0 3.613 0.156 4.097 0.225v5.088h-2.813c-2.206 0-2.632 1.125-2.632 2.769v3.919h4.978l-0.683 5.687h-4.295v14.313z"></path>
+            </symbol>
+            <symbol id="icon-insta" viewBox="0 0 30 32">
+                <title>insta</title>
+                <path  d="M14.769 8.26c-4.193 0-7.576 3.453-7.576 7.734s3.382 7.734 7.576 7.734c4.193 0 7.576-3.453 7.576-7.734s-3.383-7.734-7.576-7.734zM14.769 21.021c-2.71 0-4.925-2.255-4.925-5.028s2.209-5.028 4.925-5.028c2.716 0 4.925 2.255 4.925 5.028s-2.215 5.028-4.925 5.028zM24.422 7.943c0 1.003-0.791 1.804-1.767 1.804-0.982 0-1.767-0.808-1.767-1.804s0.791-1.804 1.767-1.804c0.976 0 1.767 0.808 1.767 1.804zM29.44 9.774c-0.112-2.416-0.653-4.557-2.387-6.32-1.727-1.763-3.824-2.315-6.191-2.437-2.439-0.141-9.752-0.141-12.191 0-2.36 0.114-4.457 0.666-6.191 2.43s-2.268 3.904-2.387 6.32c-0.138 2.49-0.138 9.955 0 12.445 0.112 2.416 0.653 4.557 2.387 6.32s3.824 2.315 6.191 2.437c2.44 0.141 9.752 0.141 12.191 0 2.367-0.114 4.464-0.666 6.191-2.437 1.727-1.763 2.268-3.904 2.387-6.32 0.138-2.49 0.138-9.948 0-12.438zM26.288 24.885c-0.514 1.319-1.51 2.336-2.809 2.867-1.945 0.788-6.561 0.606-8.71 0.606s-6.771 0.175-8.71-0.606c-1.292-0.525-2.288-1.541-2.809-2.867-0.771-1.985-0.593-6.697-0.593-8.891s-0.171-6.912 0.593-8.891c0.514-1.319 1.51-2.336 2.809-2.867 1.945-0.788 6.56-0.606 8.71-0.606s6.771-0.175 8.71 0.606c1.292 0.525 2.288 1.541 2.809 2.867 0.771 1.986 0.593 6.697 0.593 8.891s0.178 6.912-0.593 8.891z"></path>
+            </symbol>
+            <symbol id="icon-telegram" viewBox="0 0 35 32">
+                <title>telegram</title>
+                <path  d="M34.808 3.48l-5.268 25.359c-0.397 1.79-1.434 2.235-2.906 1.392l-8.026-6.038-3.873 3.802c-0.429 0.438-0.787 0.803-1.613 0.803l0.577-8.344 14.875-13.722c0.647-0.589-0.14-0.915-1.005-0.326l-18.39 11.821-7.917-2.53c-1.722-0.549-1.753-1.758 0.358-2.601l30.966-12.178c1.434-0.549 2.688 0.326 2.221 2.561z"></path>
+            </symbol>
+            <symbol id="icon-vk" viewBox="0 0 56 32">
+                <title>vk</title>
+                <path  d="M52.986 3.034c0.36-1.172 0-2.034-1.731-2.034h-5.726c-1.458 0-2.129 0.741-2.489 1.566 0 0-2.917 6.853-7.039 11.297-1.332 1.284-1.944 1.697-2.674 1.697-0.36 0-0.914-0.412-0.914-1.584v-10.941c0-1.406-0.408-2.034-1.614-2.034h-9.003c-0.914 0-1.458 0.656-1.458 1.266 0 1.331 2.061 1.641 2.275 5.391v8.138c0 1.781-0.331 2.109-1.060 2.109-1.944 0-6.669-6.881-9.469-14.756-0.564-1.528-1.118-2.147-2.586-2.147h-5.726c-1.633 0-1.964 0.741-1.964 1.566 0 1.462 1.944 8.728 9.051 18.328 4.735 6.553 11.404 10.106 17.471 10.106 3.646 0 4.093-0.787 4.093-2.147 0-6.263-0.33-6.853 1.497-6.853 0.846 0 2.304 0.413 5.707 3.572 3.889 3.75 4.531 5.428 6.708 5.428h5.726c1.633 0 2.46-0.788 1.983-2.344-1.089-3.272-8.449-10.003-8.779-10.453-0.846-1.050-0.603-1.519 0-2.456 0.010-0.009 7-9.497 7.719-12.713z"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <!-- svg-icon :END ======================= -->
+
+
+    <div class="wrapper wrapper-main">
+
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content flex">
+                <a class="close menu-btn"></a>
+                <ul>
+                    <li class="pushy-link"><a href="#">О компании</a></li>
+                    <li class="pushy-link"><a href="#">Решения</a></li>
+                    <li class="pushy-link"><a href="#">Тарифы</a></li>
+                    <li class="pushy-link"><a href="#">Карта</a></li>
+                    <li class="pushy-link"><a href="#">FAQ</a></li>
+                    <li class="pushy-link"><a href="#">Контакты</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#" class="vk"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg><span class="name"></span></a>
+                    <a href="#" class="fb"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg><span class="name"></span></a>
+                    <a href="#" class="telegram"><svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg><span class="name"></span></a>
+                    <a href="#" class="inst"><svg class="icon icon-insta"><use xlink:href="#icon-insta"></use></svg><span class="name"></span></a>
+                </div>
+            </div>
+        </nav>
+        <div class="site-overlay"></div>
+
+        <div class="parallax parallax-header parallax2">
+            <img src="img/bg-img/bg5.png" alt="" class="bg-img5">
+            <img src="img/bg-img/bg4.png" alt="" class="bg-img4">
+            <img src="img/bg-img/bg7.png" alt="" class="bg-img7">
+        </div>
+        <div class="parallax parallax-header">
+
+
+
+            <img src="img/bg-img/bg6.png" alt="" class="bg-img6">
+            <img src="img/bg-img/bg9.png" alt="" class="bg-img9">
+            <img src="img/bg-img/bg10.png" alt="" class="bg-img10">
+        </div>
+
+        <header>
+            <div class="top-menu flex">
+                <button class="menu-btn desctop_none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo"><a href="#"><img src="img/header-logo.svg" alt="Mango"></a></div>
+                <ul class="menu">
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Решения</a></li>
+                    <li><a href="">Тарифы</a></li>
+                    <li><a href="">Карта</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <a href="#" class="top-menu_button"><span>Войти</span></a>
+            </div>
+            <div class="conteiner">
+                <div class="header_title-block">
+                    <h2>Онлайн кошелек</h2>
+                    <h1>MANGO</h1>
+                    <p class="header_title">
+                        Денежные переводы по всему
+                        <br />миру и оплата в Интернете
+                        <br />за считанные секунды.
+                    </p>
+                    <a href="" class="button"><span>Создать кошелек</span></a>
+                </div>
+
+            </div>
+            <div class="header-man">
+                <img src="img/header-man.png" alt="" class="man-img">
+                <img src="img/bg-img/bg8.png" alt="" class="bg-apple">
+            </div>
+            <img src="img/bg-img/bg1.png" alt="" class="bg-img1">
+            <img src="img/bg-img/bg2.png" alt="" class="bg-img2">
+            <img src="img/bg-img/bg3.png" alt="" class="bg-img3">
+
+        </header>
+
+        <section class="section1">
+            <div class="conteiner">
+                <h2>Система одна,<br />возможностей — тысячи</h2>
+                <span class="separator"></span>
+                <div class="flex">
+                    <div class="sect1_block">
+                        <div class="sect1_block-top sect1_first-block-top">
+                            <p>Самая низкая комиссия в интернете</p>
+                        </div>
+                        <p class="sect1_block-bottom">В течение года вы платите всего…%. Минимальная комиссия среди популярных систем онлайн оплаты.</p>
+                    </div>
+                    <div class="sect1_block">
+                        <div class="sect1_block-top sect1_second-block-top">
+                            <p>Электронные переводы по всему миру</p>
+                        </div>
+                        <p class="sect1_block-bottom">Отправляйте деньги в любую<br />точку земного шара, даже не зарегистрированным в системе людям.</p>
+                    </div>
+                    <div class="sect1_block">
+                        <div class="sect1_block-top sect1_third-block-top">
+                            <p>Мгновенное зачисление</p>
+                        </div>
+                        <p class="sect1_block-bottom">Деньги поступят в ваш кошелек в срок от 5 секунд.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2 center">
+            <div class="conteiner">
+                <h2>Получите доступ к вводу <br />и выводу денег</h2>
+                <p>на различные платежные системы,<br /> банковские карты и банки</p>
+                <span class="separator"></span>
+                <div class="flex">
+                    <a class="sect2_block mastercard" href="#"><img src="img/sect2/1.svg" alt=""></a>
+                    <a class="sect2_block visa" href="#"><img src="img/sect2/2.svg" alt=""></a>
+                    <a class="sect2_block qiwi" href="#"><img src="img/sect2/3.svg" alt=""></a>
+                    <a class="sect2_block wire" href="#"><img src="img/sect2/4.svg" alt=""></a>
+                    <a class="sect2_block yandex" href="#"><img src="img/sect2/5.svg" alt=""></a>
+                    <a class="sect2_block webmoney" href="#"><img src="img/sect2/6.svg" alt=""></a>
+                    <a class="sect2_block paypal" href="#"><img src="img/sect2/7.svg" alt=""></a>
+                    <a class="sect2_block advcash" href="#"><img src="img/sect2/8.svg" alt=""></a>
+                    <a class="sect2_block skrill" href="#"><img src="img/sect2/9.svg" alt=""></a>
+                    <a class="sect2_block wallet" href="#"><img src="img/sect2/10.svg" alt=""></a>
+                </div>
+                <a href="#" class="button"><span>Создать кошелек</span></a>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="conteiner">
+                <h2>Преимущества</h2>
+                <span class="separator"></span>
+                <div class="flex">
+                    <div class="sect3_block">
+                        <h5>Случайные бонусы при переводе от ...</h5>
+                        <span class="number">01</span>
+                        <span class="separator"></span>
+                        <p>Получите случайный бонус к каждому переводу: прибавка к сумме, сниженный % комиссии и другие приятные подарки.</p>
+                    </div>
+                    <div class="sect3_block">
+                        <h5>Онлайн кошелек<br /> с функцией банка</h5>
+                        <span class="number">02</span>
+                        <span class="separator"></span>
+                        <p>Вы можете не только перевести и получить деньги, оформить карту для безопасного пользования системой, но и вкладывать …руб под …% годовых.</p>
+                    </div>
+                    <div class="sect3_block">
+                        <h5>Обмен валют на особых условия</h5>
+                        <span class="number">03</span>
+                        <span class="separator"></span>
+                        <p>Обменивайте доллары, рубли и гривны поasdasdasd курсу, превышающему банковский.</p>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <img src="img/bg-img/bg8.png" alt="" class="bg-apple">
+                    <img src="img/bg-img/bg4.png" alt="" class="bg-img4">
+                    <img src="img/bg-img/bg7.png" alt="" class="bg-img7">
+                    <img src="img/bg-img/bg9.png" alt="" class="bg-img9">
+                </div>
+                <img class="sect3_img4" src="img/sect3/4.png" alt="">
+                <img class="sect3_img1" src="img/sect3/1.png" alt="">
+                <img class="sect3_img3" src="img/sect3/3.png" alt="">
+                <img class="sect3_img2" src="img/sect3/2.png" alt="">
+                <img class="sect3_img5" src="img/sect3/5.png" alt="">
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="conteiner">
+                <h2>Открыть кошелек просто,</h2>
+                <p class="center">как включить телевизор</p>
+                <span class="separator"></span>
+                <div class="flex">
+                    <div class="sect4_block">
+                        <img src="img/sect4-img1.svg" alt="">
+                        <p><span>Авторизуетесь</span> в системе</p>
+                    </div>
+                    <div class="sect4_block">
+                        <img src="img/sect4-img2.svg" alt="">
+                        <p><span>Заполняете</span> платежные данные</p>
+                    </div>
+                    <div class="sect4_block">
+                        <img src="img/sect4-img3.svg" alt="">
+                        <p><span>Отправляете и получаете</span> переводы по всему миру</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5">
+            <div class="conteiner">
+                <h2>FAQ</h2>
+                <span class="separator"></span>
+                <div class="flex sect5_faq">
+                    <div class="sect5_faq-left">
+                        <div >
+                            <div class="pane_header">Как я могу осуществить перевод<br /> или получить деньги?<span></span></div>
+                            <div class="subitem">Кроме стандартных методов шифрования мы отслеживаем современные тенденции, причем не только в сфере защиты информации, но и с обратной стороны – со стороны хакеров. Мы собираем информацию о «популярных» методах взлома аккаунтов и кражи информации и создаем дополнения, которые минимизируют риски неправомерных действий. Кроме того на сайте работает защита от спама и мультиаккаунтов, блокировка по IP, которая учитывает «обходные маневры» VPN.</div>
+                        </div>
+                        <div >
+                            <div class="pane_header">Почему такая низкая комиссия на переводы и обмен валют?<span></span></div>
+                            <div class="subitem">Кроме стандартных методов шифрования мы отслеживаем современные тенденции, причем не только в сфере защиты информации, но и с обратной стороны – со стороны хакеров. Мы собираем информацию о «популярных» методах взлома аккаунтов и кражи информации и создаем дополнения, которые минимизируют риски неправомерных действий. Кроме того на сайте работает защита от спама и мультиаккаунтов, блокировка по IP, которая учитывает «обходные маневры» VPN.</div>
+                        </div>
+                        <div >
+                            <div class="pane_header">Как вы защищаете персональные данные?<span></span></div>
+                            <div class="subitem">Кроме стандартных методов шифрования мы отслеживаем современные тенденции, причем не только в сфере защиты информации, но и с обратной стороны – со стороны хакеров. Мы собираем информацию о «популярных» методах взлома аккаунтов и кражи информации и создаем дополнения, которые минимизируют риски неправомерных действий. Кроме того на сайте работает защита от спама и мультиаккаунтов, блокировка по IP, которая учитывает «обходные маневры» VPN.</div>
+                        </div>
+                    </div>
+                    <div class="sect5_faq-right">
+                        <div >
+                            <div class="pane_header">Что означает «случайные бонусы»?<span></span></div>
+                            <div class="subitem">Кроме стандартных методов шифрования мы отслеживаем современные тенденции, причем не только в сфере защиты информации, но и с обратной стороны – со стороны хакеров. Мы собираем информацию о «популярных» методах взлома аккаунтов и кражи информации и создаем дополнения, которые минимизируют риски неправомерных действий. Кроме того на сайте работает защита от спама и мультиаккаунтов, блокировка по IP, которая учитывает «обходные маневры» VPN.</div>
+                        </div>
+                        <div >
+                            <div class="pane_header">Я могу подключить Манго к своему интернет-магазину?<span></span></div>
+                            <div class="subitem">Кроме стандартных методов шифрования мы отслеживаем современные тенденции, причем не только в сфере защиты информации, но и с обратной стороны – со стороны хакеров. Мы собираем информацию о «популярных» методах взлома аккаунтов и кражи информации и создаем дополнения, которые минимизируют риски неправомерных действий. Кроме того на сайте работает защита от спама и мультиаккаунтов, блокировка по IP, которая учитывает «обходные маневры» VPN.</div>
+                        </div>
+                        <div >
+                            <div class="pane_header">Как быстро отвечают специалисты вашего колл центра?<span></span></div>
+                            <div class="subitem">Кроме стандартных методов шифрования мы отслеживаем современные тенденции, причем не только в сфере защиты информации, но и с обратной стороны – со стороны хакеров. Мы собираем информацию о «популярных» методах взлома аккаунтов и кражи информации и создаем дополнения, которые минимизируют риски неправомерных действий. Кроме того на сайте работает защита от спама и мультиаккаунтов, блокировка по IP, которая учитывает «обходные маневры» VPN.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex sect5_bottom-block">
+                    <div class="block-left">
+                        <h3>Манго</h3>
+                        <p>вкусные финансовые продукты для вас и вашего бизнеса.</p>
+                    </div>
+                    <div class="block-right">
+                        <h3>Регистрируйтесь</h3>
+                        <p>и получите свою максимальную выгоду.</p>
+                        <a href="#" class="button"><span>Создать кошелек</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section6">
+            <div class="conteiner">
+                <h2>Если у вас Остались вопросы,</h2>
+                <p>вы всегда можете связаться с нами</p>
+                <span class="separator"></span>
+                <div class="flex">
+                    <div class="sect6_block sect6_block-first">
+                        <p>
+                            Звоните
+                        </p>
+                        <a href="tel:+380965232332">+38 (096) 523-23-32</a>
+                    </div>
+                    <div class="sect6_block sect6_block-second">
+                        <p>
+                            Пишите
+                        </p>
+                        <a href="mailto:mango@gmail.com">mango@gmail.com</a>
+                    </div>
+                    <div class="sect6_block sect6_block-third">
+                        <a href="#" class="vk"><svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg><span class="name"></span></a>
+                        <a href="#" class="fb"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg><span class="name"></span></a>
+                        <a href="#" class="telegram"><svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg><span class="name"></span></a>
+                        <a href="#" class="inst"><svg class="icon icon-insta"><use xlink:href="#icon-insta"></use></svg><span class="name"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <img src="img/bg-img/bg9.png" alt="" class="sect6-img2">
+                <img src="img/bg-img/bg4.png" alt="" class="sect6-img4">
+                <img src="img/bg-img/bg4.png" alt="" class="sect6-img7">
+            </div>
+            <img src="img/bg-img/bg2.png" alt="" class="sect6-img8">
+            <img src="img/bg-img/bg2.png" alt="" class="sect6-img6">
+            <img src="img/bg-img/bg2.png" alt="" class="sect6-img3">
+            <img src="img/bg-img/sect6-quest.svg" alt="" class="sect6-img1">
+            <img src="img/bg-img/sect6-quest.svg" alt="" class="sect6-img5">
+        </section>
+
+        <footer>
+            <div class="coneiner center">
+                <div class="footer-logo"><a href="#"><img src="img/logo-footer.svg" alt=""></a></div>
+                <p>© 2018, Манго. Все права защищены</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- scripts ======================= -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- scripts : END ======================= -->
+
+</body>
+</html>
